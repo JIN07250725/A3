@@ -98,7 +98,8 @@ int main() {
         }
         
         totalFare += adults * 14.95 + seniors * 7.40 + youths * 5.55;
-    } else {
+    } 
+    else {
         // No vehicle scenario
         cout << "\nHow many adults? ";
         cin >> adults;
@@ -131,7 +132,8 @@ int main() {
     // Check for free ticket eligibility
     if (totalFare > 100.00) {
         cout << "You get a free adult ticket for your next trip.\n\n";
-    } else {
+    } 
+    else {
         double difference = 100.00 - totalFare;
         cout << "If you spend $" << difference << " more, you are eligible for a free adult ticket for the next trip.\n\n";
     }
@@ -140,6 +142,7 @@ int main() {
     cout << "Thank you for using Washington State Ferries Fare Calculator!\n";
     return 0;
 }
+
 
 
 
@@ -321,7 +324,7 @@ Fare Description                                           Ticket $
 Vehicle Under 14' (less than 168") & Driver                 $57.90
 Adult (age 19 - 64)                                         $14.95
 Senior (age 65 & over) / Disability                         $7.40
-Youth (age 6 - 18)     
+Youth (age 6 - 18)                                          $5.55
 Bicycle Surcharge (included with Vehicle)                   $4.00
 
 Are you riding a vehicle on the Ferry (Y/N): n
@@ -352,4 +355,3 @@ Uh oh!! Too many people in your group. Split into 2 groups and try again!
 Thank you for using Washington State Ferries Fare Calculator!
 
 */
-
